@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Edukasi - Desa Cipancar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div style="display:flex;align-items:center;gap:10px;">
+      <img src="assets/logo.png" alt="Logo Desa Cipancar" style="height:50px;">
+      <div>
+        <h2 style="margin:0;">Desa Cipancar</h2>
+        <small style="font-size:12px;color:#ddd;">Kabupaten Sumedang</small>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="panduan.html">Panduan Gizi</a>
+      <a href="tips.html">Tips MPASI</a>
+      <a href="jadwal.html">Jadwal Posyandu</a>
+      <a href="vidio.html" class="active">Video Edukasi</a>
+      <a href="kontak.html">Kontak Kader</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Video Edukasi</h1>
+    <p>Kumpulan video edukasi tentang pentingnya gizi seimbang dan pencegahan stunting di Desa Cipancar.</p>
+  </section>
+
+  <!-- Konten Utama -->
+  <main style="display:flex;flex-wrap:wrap;gap:20px;justify-content:center;">
+    <div class="card" style="width:100%;max-width:800px;">
+      <h3>Pentingnya Gizi Seimbang</h3>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;">
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/1gkTQTqJ7xg" 
+          title="YouTube video" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        </iframe>
+      </div>
+    </div>
+
+    <div class="card" style="width:100%;max-width:800px;">
+      <h3>Cara Cegah Stunting</h3>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:10px;">
+        <iframe width="560" height="315" 
+          src="https://www.youtube.com/embed/vXwZ8YXjM0Q" 
+          title="YouTube video" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          style="position:absolute;top:0;left:0;width:100%;height:100%;">
+        </iframe>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Desa Cipancar - Portal Stunting</p>
+  </footer>
+</body>
+</html>

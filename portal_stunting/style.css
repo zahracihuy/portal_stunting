@@ -1,0 +1,245 @@
+/* Style umum */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+header {
+  background-color: #006400;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header img {
+  width: 70px;
+  height: auto; /* biar logo tidak gepeng */
+  margin-right: 10px;
+}
+
+header h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+header small {
+  font-size: 12px;
+  display: block;
+  margin-top: -3px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 100, 0, 0.7), rgba(0, 100, 0, 0.7)),
+              url('assets/bangunan.png') center/cover no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  font-size: 18px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #218838;
+}
+
+/* Card */
+main {
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #006400;
+}
+
+/* Footer */
+footer {
+  background: #006400;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Section umum */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #006400;
+  margin-bottom: 20px;
+}
+
+/* Grid makanan & suplemen */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  align-items: stretch; /* biar rata sejajar */
+}
+
+.food-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* teks & tombol tetap rata */
+}
+
+.food-card:hover {
+  transform: translateY(-5px);
+}
+
+.food-card img {
+  width: 200px;
+  height: auto;
+  margin: 0 auto 10px;
+}
+
+.food-card h3 {
+  margin: 10px 0;
+  color: #006400;
+}
+
+.alt-bg {
+  background: #f0f8f0;
+}
+
+/* Perbandingan stunting */
+.compare {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 30px 0;
+  flex-wrap: wrap; /* biar responsif di HP */
+}
+
+.compare img {
+  width: 300px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.download {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.stunting-guide {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.stunting-guide h2 {
+  color: #006400;
+  margin-bottom: 30px;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.guide-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.guide-card h3 {
+  color: #006400;
+  margin-bottom: 10px;
+}
+
+.guide-card ul {
+  padding-left: 20px;
+}
+
+.guide-card ul li {
+  margin-bottom: 8px;
+}
+.tips-grid, .menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.tips-card, .menu-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: left;
+}
+
+.tips-card h3, .menu-card h3 {
+  color: #006400;
+  margin-bottom: 10px;
+}
+
+.tips-card p, .menu-card p {
+  font-size: 15px;
+  line-height: 1.5;
+}
